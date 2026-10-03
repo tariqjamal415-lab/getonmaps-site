@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /thanks
+
+Sitemap: https://getonmaps.co/sitemap.xml
