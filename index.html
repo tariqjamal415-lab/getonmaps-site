@@ -288,9 +288,12 @@
         <li><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><strong>Reply time</strong><br>We aim to reply within one business day.</div></li>
       </ul>
     </div>
-    <form class="card" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <form class="card" name="contact" method="POST" action="https://formsubmit.co/michael@getonmaps.co">
+      <input type="hidden" name="_subject" value="New Get On Maps lead (website form)">
+      <input type="hidden" name="_next" value="https://getonmaps.co/thanks">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <p class="hidden"><label>Don't fill this out if you're human: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
       <div class="row2">
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
         <div class="field"><label for="f-biz">Business name</label><input id="f-biz" name="business" type="text" autocomplete="organization" required></div>
