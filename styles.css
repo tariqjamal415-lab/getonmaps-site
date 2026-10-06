@@ -39,14 +39,25 @@ p{margin:0 0 1em}
 .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
 .btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
 .btn-sm{padding:9px 16px;font-size:.92rem}
-.nav .btn{color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-sm svg{width:16px;height:16px}
+.nav .btn{color:#fff;white-space:nowrap}
+.brand span{white-space:nowrap}
 @media (max-width:860px){.nav a:not(.btn){display:none}}
+@media (max-width:520px){
+  .site-header .wrap{padding:0 16px;gap:10px}
+  .brand{font-size:1.05rem}
+  .brand svg{width:26px;height:26px}
+  .nav .btn{padding:9px 13px;font-size:.88rem}
+  .nav .btn svg{display:none}
+}
 
 /* hero */
 .hero{padding:72px 0 64px;background:radial-gradient(1200px 500px at 85% -10%,#e5f4ee 0,rgba(229,244,238,0) 60%),linear-gradient(#fff,#f7fafc)}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .hero .lead{margin-bottom:1.6rem}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:1.4rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:1rem}
+.cta-note{margin-bottom:1.4rem;max-width:34em}
 .pills{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:0;color:var(--ink-2);font-size:.93rem;font-weight:600}
 .pills li{display:flex;align-items:center;gap:7px}
 .pills svg{width:18px;height:18px;color:var(--brand)}
@@ -144,10 +155,25 @@ section.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bo
 .faq details>div{padding:0 22px 18px;color:var(--ink-2)}
 .faq details>div p:last-child{margin:0}
 
+/* founder */
+.founder{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:center;padding:32px}
+.founder-photo{width:200px;height:200px;border-radius:16px;object-fit:cover;border:1px solid var(--line);background:#fff}
+.founder-body h3{font-size:1.35rem;margin-bottom:.15em}
+.founder-role{font-weight:700;color:var(--brand-dark);margin:0 0 .9em}
+.founder-body .btn{margin-top:6px}
+@media (max-width:620px){
+  .founder{grid-template-columns:1fr;gap:22px;justify-items:start}
+  .founder-photo{width:140px;height:140px}
+}
+
 /* contact */
 .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
 @media (max-width:900px){.contact{grid-template-columns:1fr;gap:32px}}
+.booking{background:#fff;border:2px solid var(--brand);border-radius:var(--radius);padding:24px;margin-top:26px}
+.booking h3{margin-bottom:.3em}
+.booking p{margin-bottom:16px}
 form.card{padding:30px}
+.form-title{font-size:1.2rem;margin-bottom:.4em}
 .field{margin-bottom:16px}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media (max-width:560px){.row2{grid-template-columns:1fr}}
